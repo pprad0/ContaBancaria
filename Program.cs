@@ -1,13 +1,22 @@
-﻿namespace ContaBancaria.Classes
+﻿using ContaBancaria.Model;
+
+namespace ContaBancaria.Classes
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            Conta c1 = new Conta(1, 123, 1, "Pedro", 1000.00M);
+            c1.SetTitular("Pedrao");
 
-            ClassDigitarOpcao.EscolherOperacao();
+            c1.Sacar(1000);
+            c1.Depositar(1234321.00M);
+            c1.Visualizar();
 
-            ClassMensagens.ExibirCreditos();
+
+            DigitarOpcao.EscolherOperacao();
+
+            Mensagens.ExibirCreditos();
 
         }
     }

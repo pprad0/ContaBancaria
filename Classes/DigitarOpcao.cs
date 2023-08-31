@@ -1,6 +1,6 @@
 ﻿namespace ContaBancaria.Classes
 {
-    internal class ClassDigitarOpcao
+    internal class DigitarOpcao
     {
         public static void EscolherOperacao()
         {
@@ -8,7 +8,7 @@
 
             while (true)
             {
-                ClassMensagens.ExibirMenu();
+                Mensagens.ExibirMenu();
 
                 Console.WriteLine(" Entre com a opção desejada: ");
                 numeroDigitado = Convert.ToInt32(Console.ReadLine());
@@ -21,35 +21,36 @@
                 switch (numeroDigitado)
                 {
                     case 1:
-                        ClassOperacoes.CriarConta();
+                        Operacoes.CriarConta();
                         break;
 
                     case 2:
-                        ClassOperacoes.ListarContas();
+                        Operacoes.ListarContas();
                         break;
 
                     case 3:
-                        ClassOperacoes.BuscarContaPorNumero();
+                        Operacoes.BuscarContaPorNumero();
                         break;
 
                     case 4:
-                        ClassOperacoes.AtualizarDadosConta();
+                        Operacoes.AtualizarDadosConta();
                         break;
 
                     case 5:
-                        ClassOperacoes.ApagarConta();
+                        Operacoes.ApagarConta();
                         break;
 
                     case 6:
-                        ClassOperacoes.Saque();
+                        Operacoes.Saque();
+                        //c1.Saque();
                         break;
 
                     case 7:
-                        ClassOperacoes.Deposito();
+                        Operacoes.Deposito();
                         break;
 
                     case 8:
-                        ClassOperacoes.TransferenciaEntreContas();
+                        Operacoes.TransferenciaEntreContas();
                         break;
 
                     default:

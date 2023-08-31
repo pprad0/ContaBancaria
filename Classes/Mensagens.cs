@@ -1,6 +1,6 @@
 ﻿namespace ContaBancaria.Classes
 {
-    internal class ClassMensagens
+    internal class Mensagens
     {
         public static void ExibirMenu()
         {

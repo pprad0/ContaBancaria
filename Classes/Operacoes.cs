@@ -1,6 +1,6 @@
 ﻿namespace ContaBancaria.Classes
 {
-    internal class ClassOperacoes
+    internal class Operacoes
     {
 
         public static string CriarConta()
@@ -51,7 +51,7 @@
         public static string Saque()
         {
             string teste = "Opção 'saque'.";
-            Console.WriteLine(teste);
+            //c1.Sacar();
             Console.WriteLine("\nRetornando ao menu.");
             return teste;
         }
