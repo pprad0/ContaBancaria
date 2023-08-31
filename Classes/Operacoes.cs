@@ -52,6 +52,7 @@
         {
             string teste = "Opção 'saque'.";
             //c1.Sacar();
+            Console.WriteLine(teste);
             Console.WriteLine("\nRetornando ao menu.");
             return teste;
         }
