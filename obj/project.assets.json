@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria\\ContaBancaria_Console.csproj",
-      "projectName": "ContaBancaria_Console",
-      "projectPath": "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria\\ContaBancaria_Console.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria.csproj",
+      "projectName": "ContaBancaria",
+      "projectPath": "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\ContaBancaria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

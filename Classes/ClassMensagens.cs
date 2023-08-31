@@ -1,4 +1,4 @@
-﻿namespace ContaBancaria
+﻿namespace ContaBancaria.Classes
 {
     internal class ClassMensagens
     {

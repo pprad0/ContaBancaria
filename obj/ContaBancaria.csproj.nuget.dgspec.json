@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria_Console.csproj": {}
+    "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria_Console.csproj": {
+    "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria_Console.csproj",
-        "projectName": "ContaBancaria_Console",
-        "projectPath": "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria_Console.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria.csproj",
+        "projectName": "ContaBancaria",
+        "projectPath": "C:\\Users\\user\\Desktop\\ContaBancaria\\ContaBancaria.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\user\\Desktop\\ContaBancaria\\obj\\",
         "projectStyle": "PackageReference",
