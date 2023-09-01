@@ -13,6 +13,12 @@ namespace ContaBancaria.Classes
             c1.Depositar(55000.00M);
             c1.Visualizar();
 
+            ContaCorrente cc1 = new ContaCorrente(2, 1234, 1, "Dolores", 500.60M, 1200.00M);
+            cc1.Sacar(5000);
+            cc1.Visualizar();
+
+            ContaPoupanca cp1 = new ContaPoupanca(3, 1234, 2, "Dudu", 2400, 20);
+            cp1.Visualizar();
 
             DigitarOpcao.EscolherOperacao();
 

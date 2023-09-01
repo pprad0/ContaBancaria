@@ -72,7 +72,8 @@
         }
 
 
-        public bool Sacar(decimal valor)
+        //Polimorfismo de sobrecarga
+        public virtual bool Sacar(decimal valor)
         {
             if (this.saldo < valor)
             {
@@ -89,7 +90,7 @@
             this.SetSaldo(this.saldo + valor);
         }
 
-        public void Visualizar()
+        public virtual void Visualizar()
         {
             string tipo = "";
 
