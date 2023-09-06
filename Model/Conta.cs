@@ -2,6 +2,7 @@
 {
     public abstract class Conta
     {
+        //atributos da classe
         private int numero;
         private int agencia;
         private int tipo;
@@ -10,8 +11,10 @@
 
 
         //Construtor
-        public Conta(int numero, int agencia, int tipo, string titular, decimal saldo)
+        public Conta(int numero, int agencia, int tipo, string titular, decimal saldo) //entre parênteses = parâmetros
         {
+            //a esquerda da igualdade é atributo da classe
+            //a direita da igualdade é parâmetro
             this.numero = numero;
             this.agencia = agencia;
             this.tipo = tipo;

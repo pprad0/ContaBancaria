@@ -23,6 +23,7 @@
 
 
         //Polimorfismo de sobrecarga
+        // Override = sobrescrever
         public override bool Sacar(decimal valor)
         {
 
@@ -40,6 +41,8 @@
         public override void Visualizar()
         {
             base.Visualizar();
+            //console tudo o que tava na Conta
+
             Console.WriteLine($" Limite da conta: {this.limite}");
         }
 
