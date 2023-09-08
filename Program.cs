@@ -7,9 +7,9 @@ namespace ContaBancaria.Classes
     {
         static void Main(string[] args)
         {
-            int opcao, agencia, tipo, aniversario, numero;
+            int opcao, agencia, tipo, aniversario, numero, numeroDestino;
             string? titular;
-            decimal saldo, limite;
+            decimal saldo, limite, valor;
 
 
             ContaController contas = new();
@@ -226,16 +226,124 @@ namespace ContaBancaria.Classes
                         break;
 
                     case 6:
-                        //Saque();
-                        //c1.Saque();
+                        //Saque
+                        //dados necessários: Numero da Conta, valor do saque
+
+                        Console.WriteLine(" Digite o número da Conta: ");
+                        try
+                        {
+                            numero = Convert.ToInt32(Console.ReadLine());
+                        }
+                        catch (FormatException)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("\nDigite um número de conta válido.");
+                            Console.ResetColor();
+                            numero = 0;
+                        }
+
+                        Console.WriteLine(" Digite o valor do Saque: ");
+                        try
+                        {
+                            valor = Convert.ToInt32(Console.ReadLine());
+                        }
+                        catch (FormatException)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("\nDigite um número de valor válido.");
+                            Console.ResetColor();
+                            valor = 0;
+                        }
+                        //sacar
+
+                        contas.Sacar(numero, valor);
+
                         break;
 
                     case 7:
-                        //Deposito();
+                        //Deposito
+                        Console.WriteLine(" Digite o número da Conta: ");
+                        try
+                        {
+                            numero = Convert.ToInt32(Console.ReadLine());
+                        }
+                        catch (FormatException)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("\nDigite um número de conta válido.");
+                            Console.ResetColor();
+                            numero = 0;
+                        }
+
+                        Console.WriteLine(" Digite o valor do Depósito: ");
+                        try
+                        {
+                            valor = Convert.ToInt32(Console.ReadLine());
+                        }
+                        catch (FormatException)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("\nDigite um número de valor válido.");
+                            Console.ResetColor();
+                            valor = 0;
+                        }
+
+                        contas.Depositar(numero, valor);
+
                         break;
 
                     case 8:
                         //TransferenciaEntreContas();
+
+                        //Saque
+                        //dados necessários: Numero da Conta, valor do saque
+
+                        Console.WriteLine(" Digite o número da sua Conta: ");
+                        try
+                        {
+                            numero = Convert.ToInt32(Console.ReadLine());
+                        }
+                        catch (FormatException)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("\nDigite um número de conta válido.");
+                            Console.ResetColor();
+                            numero = 0;
+                            break;
+                        }
+
+                        Console.WriteLine(" Digite o valor da Transferência: ");
+                        try
+                        {
+                            valor = Convert.ToInt32(Console.ReadLine());
+                        }
+                        catch (FormatException)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("\nDigite um número de valor válido.");
+                            Console.ResetColor();
+                            valor = 0;
+                            break;
+                        }
+
+                        //Deposito
+                        Console.WriteLine(" Digite o número da Conta Destino: ");
+                        try
+                        {
+                            numeroDestino = Convert.ToInt32(Console.ReadLine());
+                        }
+                        catch (FormatException)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("\nDigite um número de Conta Destino válido.");
+                            Console.ResetColor();
+                            numeroDestino = 0;
+                            break;
+                        }
+
+
+                        contas.Transferir(numero, numeroDestino, valor);
+
                         break;
 
                     default:
