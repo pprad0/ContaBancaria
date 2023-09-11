@@ -38,7 +38,8 @@ namespace ContaBancaria.Classes
                     "\n\t6 - Sacar" +
                     "\n\t7 - Depositar" +
                     "\n\t8 - Transferir valores entre contas" +
-                    "\n\t9 - Sair" +
+                    "\n\t9 - Consulta por nome" +
+                    "\n\t10 - Sair" +
                     "\n\n---------------------------------------------------------\n";
 
                 Console.WriteLine(menu);
@@ -59,7 +60,7 @@ namespace ContaBancaria.Classes
 
                 Console.ForegroundColor = ConsoleColor.Green;
 
-                if (opcao == 9)
+                if (opcao == 10)
                     break;
 
                 switch (opcao)
@@ -343,6 +344,13 @@ namespace ContaBancaria.Classes
 
 
                         contas.Transferir(numero, numeroDestino, valor);
+
+                        break;
+
+                    case 9:
+                        Console.WriteLine("Digite o Nome do titular");
+                        titular = Console.ReadLine()!;
+                        contas.ListarTodasPorTitular(titular);
 
                         break;
 

@@ -15,6 +15,7 @@ namespace ContaBancaria.Repository
         public void Sacar(int numero, decimal valor);
         public void Depositar(int numero, decimal valor);
         public void Transferir(int numeroOrigem, int numeroDestino, decimal valor);
+        public void ListarTodasPorTitular(string titular);
 
     }
 }
